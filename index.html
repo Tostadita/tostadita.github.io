@@ -103,6 +103,7 @@
   .badge.wip{background:rgba(125,211,252,0.12); color:var(--accent-2); border:1px solid rgba(125,211,252,0.35);}
   .card p{color:var(--text-dim); font-size:14px; margin:0 0 10px;}
   .card .stack{font-family:var(--mono); font-size:12px; color:var(--text-dim);}
+  .card .repo-link{font-family:var(--mono); font-size:12.5px; display:inline-block; margin-top:2px;}
 
   .edu-lang{display:grid; grid-template-columns:1fr 1fr; gap:32px;}
   @media (max-width:640px){ .edu-lang{grid-template-columns:1fr;} }
@@ -238,14 +239,16 @@
     <h2 data-i18n="proj.title">Proyectos</h2>
     <div class="cards">
       <div class="card">
-        <span class="badge live" data-i18n="proj.live">En Google Play</span>
+        <span class="badge wip" data-i18n="proj.soon">Próximamente en Google Play</span>
         <h3 data-i18n="proj.p1.title">App de noticias con análisis de sesgo</h3>
-        <p data-i18n="proj.p1.text">Feed de noticias que analiza el sesgo informativo de cada artículo. Ficha completa y enlace próximamente.</p>
+        <p data-i18n="proj.p1.text">Feed de noticias que analiza el sesgo informativo de cada artículo.</p>
+        <a class="repo-link" href="https://github.com/Tostadita/RSSNewsApp" target="_blank" rel="noopener" data-i18n="proj.repo">Ver código en GitHub →</a>
       </div>
       <div class="card">
-        <span class="badge live" data-i18n="proj.live">En Google Play</span>
+        <span class="badge wip" data-i18n="proj.soon">Próximamente en Google Play</span>
         <h3 data-i18n="proj.p2.title">Asistente de precio de la luz</h3>
-        <p data-i18n="proj.p2.text">Glosario de precios de la electricidad con un asistente que calcula el coste diario de tus dispositivos. Ficha completa y enlace próximamente.</p>
+        <p data-i18n="proj.p2.text">Glosario de precios de la electricidad con un asistente que calcula el coste diario de tus dispositivos.</p>
+        <a class="repo-link" href="https://github.com/Tostadita/luzminus" target="_blank" rel="noopener" data-i18n="proj.repo">Ver código en GitHub →</a>
       </div>
       <div class="card">
         <span class="badge wip" data-i18n="proj.wip">En desarrollo</span>
@@ -323,11 +326,11 @@ const dict = {
     "exp.r3.bullets":"<li>Diseño de esquemas de tablas y tipos de datos para procesos de contratación (modelado de datos).</li><li>Desarrollo de un sistema de monitorización/inventario en tiempo real (tracking de estado).</li><li>Colaboración con equipos multifuncionales traduciendo requisitos de negocio a lógica de datos.</li><li>Comunicación técnica en inglés en sprint reviews, en entorno Agile internacional.</li>",
     "exp.r4.title":"Intern | Desarrollador ABAP (ECC)",
     "exp.r4.bullets":"<li>Desarrollo de interfaces de integración entre sistemas (SAP PI/PO).</li><li>Mapping de datos entre formatos XML, JSON e IDoc; testing de conexiones e integridad de datos.</li><li>Automatización de generación y envío de facturas a múltiples canales; procesamiento de ficheros CSV.</li>",
-    "proj.label":"04 · proyectos","proj.title":"Proyectos","proj.live":"En Google Play","proj.wip":"En desarrollo",
+    "proj.label":"04 · proyectos","proj.title":"Proyectos","proj.soon":"Próximamente en Google Play","proj.wip":"En desarrollo","proj.repo":"Ver código en GitHub →",
     "proj.p1.title":"App de noticias con análisis de sesgo",
-    "proj.p1.text":"Feed de noticias que analiza el sesgo informativo de cada artículo. Ficha completa y enlace próximamente.",
+    "proj.p1.text":"Feed de noticias que analiza el sesgo informativo de cada artículo.",
     "proj.p2.title":"Asistente de precio de la luz",
-    "proj.p2.text":"Glosario de precios de la electricidad con un asistente que calcula el coste diario de tus dispositivos. Ficha completa y enlace próximamente.",
+    "proj.p2.text":"Glosario de precios de la electricidad con un asistente que calcula el coste diario de tus dispositivos.",
     "proj.p3.title":"SAP / Dev AI Assistant",
     "proj.p3.text":"Asistente basado en LLM para explicar errores y sintaxis de SAP/ABAP. Construido en Flutter.",
     "edu.label":"05 · formación e idiomas","edu.title":"Formación académica",
@@ -355,11 +358,11 @@ const dict = {
     "exp.r3.bullets":"<li>Designed table schemas and data types for contract-generation processes (data modeling).</li><li>Built a real-time monitoring/inventory system (status tracking).</li><li>Collaborated with cross-functional teams translating business requirements into data logic.</li><li>Presented technical progress in English during sprint reviews, in an international Agile environment.</li>",
     "exp.r4.title":"Intern | ABAP Developer (ECC)",
     "exp.r4.bullets":"<li>Built system-to-system integration interfaces (SAP PI/PO).</li><li>Mapped data across XML, JSON, and IDoc formats; tested connections and data integrity.</li><li>Automated invoice generation and multi-channel delivery; processed CSV files.</li>",
-    "proj.label":"04 · projects","proj.title":"Projects","proj.live":"On Google Play","proj.wip":"In development",
+    "proj.label":"04 · projects","proj.title":"Projects","proj.soon":"Coming soon to Google Play","proj.wip":"In development","proj.repo":"View code on GitHub →",
     "proj.p1.title":"News feed app with bias analysis",
-    "proj.p1.text":"News feed that analyzes the informational bias of each article. Full listing and link coming soon.",
+    "proj.p1.text":"News feed that analyzes the informational bias of each article.",
     "proj.p2.title":"Electricity price assistant",
-    "proj.p2.text":"Electricity pricing glossary with an assistant that calculates the daily cost of your devices. Full listing and link coming soon.",
+    "proj.p2.text":"Electricity pricing glossary with an assistant that calculates the daily cost of your devices.",
     "proj.p3.title":"SAP / Dev AI Assistant",
     "proj.p3.text":"LLM-based assistant that explains SAP/ABAP errors and syntax. Built with Flutter.",
     "edu.label":"05 · education & languages","edu.title":"Education",
